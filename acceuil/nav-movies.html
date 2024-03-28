@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Start-UI-nav-movies</title>
+    <script src="control.js"></script>
+    <script src="server/server.js"></script>
+
+    <style>
+      body {
+        margin: 0;
+        background-color: #1e293b;
+      }
+
+      header {
+        width: 100%;
+        max-width: 1440px;
+        height: 64px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 24px;
+      }
+
+      #nav-names {
+        color: white;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+
+      #nav-names img {
+        margin-right: 10px;
+      }
+
+      #nav-names a {
+        color: white;
+        text-decoration: none;
+        margin-right: 20px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        padding: 5px 8px;
+        border-radius: 8px;
+        border: 2px solid transparent;
+        transition: background-color 0.3s;
+      }
+
+      #nav-names a:hover {
+        background-color: #0a121a;
+      }
+     #movie{
+        background-color: #0a121a;
+     }
+      
+    </style>
+  </head>
+
+  <body>
+    <header id="nav-page">
+      <div id="nav-names">
+        <img src="logo.svg" alt="" />
+        <a
+          href="movies.html"
+          target="continue-acceuil"
+          class="nav-font"
+          id="movie"
+          onclick="nav_color(this)"
+          onmouseenter="nav_hover(this)"
+          onmouseleave="reset_color(this)"
+        >Movies</a>
+        <a
+          href="admin.html"
+          target="continue-acceuil"
+          class="nav-font"
+          id="admin"
+          onclick="nav_color(this)"
+          onmouseenter="nav_hover(this)"
+          onmouseleave="reset_color(this)"
+        >Admin</a>
+      </div>
+    </header>
+  </body>
+</html>

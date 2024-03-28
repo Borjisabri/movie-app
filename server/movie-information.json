@@ -1,0 +1,31 @@
+{
+  "films": [
+    {
+      "name": "spider-men",
+      "titre": "Spider-Man: No Way Home",
+      "acteurs": ["Tom Holland", "Zendaya", "Benedict Cumberbatch"],
+      "annee_sortie": 2021,
+      "description": "Spider-Man: No Way Home est un film de super-héros américain basé sur le personnage Spider-Man de Marvel Comics.",
+      "realisateur": "Jon Watts",
+      "image": "spider-men.jpg"
+    },
+    {
+      "name": "king-kong",
+      "titre": "King Kong",
+      "acteurs": ["Naomi Watts", "Jack Black", "Adrien Brody"],
+      "annee_sortie": 2005,
+      "description": "King Kong est un film fantastique américano-néo-zélandais réalisé par Peter Jackson.",
+      "realisateur": "Peter Jackson",
+      "image": "king-kong.jpg"
+    },
+    {
+      "name": "super-men",
+      "titre": "Superman: The Movie",
+      "acteurs": ["Christopher Reeve", "Margot Kidder", "Gene Hackman"],
+      "annee_sortie": 1978,
+      "description": "Superman: The Movie est un film de super-héros britannico-américain réalisé par Richard Donner.",
+      "realisateur": "Richard Donner",
+      "image": "super-men.jpg"
+    }
+  ]
+}

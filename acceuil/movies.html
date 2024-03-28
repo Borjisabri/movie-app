@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Satrt-UI-movies</title>
+    <script src="control.js"></script>
+    <script src="server/server.js"></script>
+
+    <style>
+      body {
+        background-color: whitesmoke;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 100vh;
+      }
+
+      header {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+      }
+
+      #search-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+      }
+
+      #search-zone {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px 10px 10px 40px;
+        background: url("search-icon.png") no-repeat scroll 10px 50%;
+        background-size: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        color: black;
+        margin: 0;
+        outline: none;
+        background-color: white;
+      }
+
+      #search-zone::placeholder {
+        color: grey;
+      }
+      #film-div {
+        display: flex;
+        gap: 16px;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+
+      .img-films {
+        width: 250px;
+        height: auto;
+        border: 2px solid whitesmoke;
+        border-radius: 5px;
+      }
+      main {
+        padding: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-zone"
+          placeholder="Search by name, year, genre, director, actors..."
+        />
+      </div>
+    </header>
+    <main>
+      
+      <div id="film-div">
+        <a
+          href="film.html"
+          target="continue-acceuil"
+          onclick="film_info_control(this)"
+          id="king-kong"
+        >
+          <img src="king-kong.jpg" alt="kong-kong" class="img-films" />
+        </a>
+        
+
+        <a
+          href="film.html"
+          id="super-men"
+          target="continue-acceuil"
+          onclick="film_info_control(this)"
+        >
+          <img src="super-men.jpg" alt="super-men" class="img-films" />
+        </a>
+        <a
+          href="film.html"
+          id="spider-men"
+          target="continue-acceuil"
+          onclick="film_info_control(this)"
+        >
+          <img src="spider-men.jpg" alt="spider-men" class="img-films" />
+        </a>
+        
+      </div>
+    </main>
+  </body>
+</html>

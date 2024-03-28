@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>create-account</title>
+    <link rel="icon" type="image/png" href="logo-of-site.png" />
+    <link rel="stylesheet" href="log-in.css" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/145264c4d7.js" crossorigin="anonymous"></script>
+    <script src="log.js"></script>
+    <script src="server/server.js"></script>
+
+  </head>
+  <body class="body">
+    <div class="center">
+      <div id="mon-titre">
+        <img src="Logo [web].svg"id="img-start-ui-2" />
+      </div>
+      <div class="mon-login">
+        <form action="">
+          <p class="login"><strong>Create Account</strong></p>
+          <label for="language">Language <span class="etoile">*</span></label>
+          <br />
+          <select class="input2" class="select-language" required>
+            <option value="">Value</option>
+            <option value="arabe">Arabe</option>
+            <option value="français">Français</option>
+            <option value="anglais">Anglais</option>
+          </select>
+          <br />
+          <label for="first-name" id="first-name"
+            >First Name <span class="etoile">*</span> </label
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <label for="last-name" id="last-name"
+            >Last Name <span class="etoile">*</span> </label
+          ><br />
+          <input type="text" placeholder="Jhon" class="first-last-name" />
+          <input type="text" placeholder="Doe"  class="first-last-name"/>
+          <br />
+          <label for="Email">Email <span class="etoile">*</span> </label> <br />
+          <input
+            type="email"
+            required
+            class="input2"
+            placeholder="Exemple@exemple.com"
+          /><br />
+          <label for="Password">Password <span class="etoile">*</span></label>
+          <div>
+          <input type="password" required id="passwordd" class="input2" />
+          <i class="fa fa-eye-slash" aria-hidden="true" onclick="passwordShowing()" id="show-password"></i>
+        </div>
+          <input type="submit" value="Sign Up"  id="sign-up" />
+        </form>
+      </div>
+      <br />
+      <div id="new-account">
+        Alredy have an account ? <a href="index.html" class="a-href">Log in</a>
+      </div>
+    </div>
+  </body>
+</html>
